@@ -15,7 +15,8 @@ class ArticlesController < ApplicationController
 		articles_data = JSON.parse(response)
 
 		articles_data.each do |article|
-			record = Article.find_or_create_by(article_id: article['id'])
+      next if Article.find_by(article_id: article['id'])
+			record = Article.find_or_initialize_by(article_id: article['id'])
       record.title =  article['title']
       record.description =  article['description']
       record.save
