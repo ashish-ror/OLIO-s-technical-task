@@ -3,9 +3,13 @@ Ruby-On-Rails Coding Task in respone to https://tech.olioex.com/rails-coding-tas
 To get the Rails server running locally:
 
 Clone this repo
+
 bundle install to install all required dependencies
+
 rails db:create to create the database
+
 rails db:migrate to run migrations
+
 rails s to start the local server
 
 It could definitely be enhanced in a lot better way but done is most simple way possible as page load was required everytime to load content.
