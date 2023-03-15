@@ -14,6 +14,6 @@ rails s to start the local server
 
 It could definitely be enhanced in a lot better way but done is most simple way possible as page load was required everytime to load content.
 
-If the likes could be per user, we could send ajax request to increment(create) or redo(destroy) the count in UI and save value in controller. The page could be loaded just once and we could have check the fresh new feeds from a background worker job and append in the UI without page refresh.
+If the likes could be per user, we could send ajax request to increment(create) or redo(destroy) the likes in UI and save value in controller. Like could have its owm model(table) which can have attributes like count(integer) and liked_by(user_id). The page could be loaded just once and we could have check the fresh new feeds from a background worker job and append in the UI without page refresh.
 
 Also in articles json, I could not access the image url as it's Olio private url. Other details can be added in UI as per requirements.
